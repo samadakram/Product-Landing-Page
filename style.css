@@ -1,0 +1,251 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header start */
+header{
+    width: 100%;
+    background-color: #eee;
+    border: 1px solid salmon;
+}
+.logo img{
+    width: 100%;
+    max-width: 300px;
+    max-height: 100%;
+}
+ul{
+    list-style-type: none;
+    margin-top: .7rem !important;
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
+    border: 1px solid black;
+    padding: 0;
+}
+ul li a:hover{
+    color: #000;
+}
+.logo a{
+    border: 1px solid blue;
+}
+/* Header end */
+
+/* Email section start */
+.container{
+    border: 1px solid black;
+}
+.email-head{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    font-size: .7rem;
+    padding: 5px;
+    font-size: 1rem;
+}
+input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+    font-size: 1em;
+    font-weight: 900;
+    border-radius: 2px;
+    padding: 0;
+}
+input[type='submit']:hover{
+    background-color: orange;
+    transition: background-color 1s;
+}
+.email{
+    width: 400px;
+    border: 1px solid brown;
+}
+
+
+/* Email section end */
+
+/* Services section start */
+.services{
+    margin-top: 5rem;
+    border: 1px solid green;
+}
+.service-head h2{
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.service-head p{
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.fa{
+    font-weight: 900;
+}
+.icon{
+    color: darkorange;
+}
+.services .row{
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+}
+/* Services section end */
+
+/* media queries breakpoints */
+
+/* Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+ @media (max-width: 575px) { 
+     /* Header start */
+     .logo a{
+        margin: 0 auto;
+     }
+    .logo{
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        border: 1px solid saddlebrown;
+    }
+    ul{
+        text-align: center;
+        margin-top: 15px;
+    }
+    ul li{
+        max-width: 100%;
+    }
+    .nav-link{
+        max-width: 140px;
+        margin: 0 auto;
+        padding-bottom: .3rem;
+    }
+    /* Header end */
+
+    /* Email section start */
+
+
+    /* Email section end */
+
+    /* Services section start */
+    .icon{
+        display: none !important;
+    }
+    .service-head{
+        text-align: center;
+        padding: 0;
+    }
+
+    /* Services section end */
+ }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 649px) {
+    /* Header start */ 
+    header{
+        display: flex;
+    }
+    .logo a{
+        margin: 0 auto;
+     }
+    ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 70px;
+    }
+    /* Header end */
+
+        /* Email section start */
+
+
+        /* Email section end */
+
+        /* Services section start */
+
+
+        /* Services section end */
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 650px) { 
+    /* Header start */
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 50vw;
+    }
+    nav  ul {
+        width: 50vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-link{
+        margin: auto;
+        margin-left: 2rem;
+        padding: 0;
+    }
+    /* Header end */
+
+        /* Email section start */
+
+
+        /* Email section end */
+
+        /* Services section start */
+
+
+        /* Services section end */
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /* Header start */
+    .logo{
+        width: 60vw;
+        display: flex;
+    }
+    .logo  img {
+        width: 100%;
+        height: 100%;
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 20px;
+    }
+    nav  ul {
+        width: 35vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    /* Header end */
+
+        /* Email section start */
+
+
+        /* Email section end */
+
+
+        /* Services section start */
+
+
+        /* Services section end */
+ }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
