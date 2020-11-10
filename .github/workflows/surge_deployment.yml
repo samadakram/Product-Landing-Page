@@ -32,4 +32,4 @@ jobs:
         run: npm install --global surge
         
       - name: Surge Deployment
-        run: surge ./ landing-page_samad.surge.sh
+        run: surge ./ landing-page_samad.surge.sh --token ${{secrets.SURGE_TOKEN}}
